@@ -177,10 +177,9 @@ const slides: React.ReactNode[] = [
   // Slide 8 — Modelo de dados
   <SlideShell key="dados" className="flex flex-col">
     <SlideTitle>6. Modelo de Dados Relacional</SlideTitle>
-    <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-      {Array.from({ length: 6 }).map((_, i) => (
-        <Placeholder key={i} />
-      ))}
+    <div className="flex-1 w-full h-full relative flex items-center justify-center">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/Assets/Modelo de Dados.png" alt="Modelo de Dados" className="max-w-full max-h-full object-contain" />
     </div>
   </SlideShell>,
 
