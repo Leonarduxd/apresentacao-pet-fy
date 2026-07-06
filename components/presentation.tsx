@@ -108,7 +108,7 @@ const slides: React.ReactNode[] = [
         style={{ ['--tw-ring-color' as string]: ORANGE }}
       >
         <Image
-          src="/assets/retriever.jpeg"
+          src="/assets/retrieve.png"
           alt="Cachorro"
           width={288}
           height={288}
@@ -139,7 +139,7 @@ const slides: React.ReactNode[] = [
   <SlideShell key="introducao" className="flex flex-col">
     <SlideTitle>1. Introdução</SlideTitle>
     <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-5 overflow-y-auto text-sm" style={{ color: BROWN }}>
-      
+
       <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 flex flex-col gap-2">
         <div className="flex items-center gap-2 border-b pb-2 mb-1">
           <span className="inline-flex shrink-0 items-center justify-center w-7 h-7 rounded-full" style={{ background: ORANGE }}>
@@ -192,7 +192,7 @@ const slides: React.ReactNode[] = [
   <SlideShell key="design" className="flex flex-col">
     <SlideTitle>2. Escolhas de Design e Usabilidade</SlideTitle>
     <div className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-6 overflow-y-auto" style={{ color: BROWN }}>
-      
+
       {/* Coluna Esquerda: Tabelas e Decisões */}
       <div className="lg:col-span-7 flex flex-col gap-6">
         <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 flex flex-col">
@@ -266,12 +266,12 @@ const slides: React.ReactNode[] = [
       {/* Coluna Direita: Imagem e Descrição */}
       <div className="lg:col-span-5 bg-white p-5 rounded-xl shadow-sm border border-gray-200 flex flex-col h-full">
         <h3 className="font-bold text-lg border-b pb-2 mb-3">Resultado da Interface</h3>
-        
+
         <div className="flex-1 w-full relative mb-4 min-h-[200px] flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden border border-gray-100">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="./assets/PetPerfil.jpg" alt="Perfil do Pet" className="max-w-full max-h-full object-contain drop-shadow-sm" />
         </div>
-        
+
         <div className="bg-orange-50 p-4 rounded-lg border border-orange-100">
           <h4 className="font-semibold text-orange-900 mb-1 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-orange-500"></span>
@@ -282,7 +282,7 @@ const slides: React.ReactNode[] = [
           </p>
         </div>
       </div>
-      
+
     </div>
   </SlideShell>,
 
@@ -414,7 +414,7 @@ const slides: React.ReactNode[] = [
               <td className="px-4 py-3 font-mono text-gray-600">/api/usuarios</td>
               <td className="px-4 py-3 text-gray-600">Cadastra um novo usuário no sistema.</td>
             </tr>
-            
+
             {/* Pets */}
             <tr className="hover:bg-gray-50">
               <td className="px-4 py-3"><span className="inline-block px-2 py-1 rounded text-xs font-bold bg-blue-100 text-blue-800 w-16 text-center">GET</span></td>
@@ -431,7 +431,7 @@ const slides: React.ReactNode[] = [
               <td className="px-4 py-3 font-mono text-gray-600">/api/pets</td>
               <td className="px-4 py-3 text-gray-600">Cadastra um novo pet (requer permissão de abrigo).</td>
             </tr>
-            
+
             {/* Adoções */}
             <tr className="hover:bg-gray-50">
               <td className="px-4 py-3"><span className="inline-block px-2 py-1 rounded text-xs font-bold bg-yellow-100 text-yellow-800 w-16 text-center">POST</span></td>
