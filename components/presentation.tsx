@@ -108,7 +108,7 @@ const slides: React.ReactNode[] = [
         style={{ ['--tw-ring-color' as string]: ORANGE }}
       >
         <Image
-          src="/assets/retrieve.png"
+          src="/apresentacao-pet-fy/assets/retrieve.png"
           alt="Cachorro"
           width={288}
           height={288}
