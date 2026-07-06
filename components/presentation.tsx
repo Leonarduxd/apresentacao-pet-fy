@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
-import { ChevronLeft, ChevronRight, PawPrint } from 'lucide-react'
+import { ChevronLeft, ChevronRight, PawPrint, LayoutTemplate, MessageSquareWarning, MousePointerClick } from 'lucide-react'
 
 const CREAM = 'rgb(249, 241, 230)'
 const BROWN = 'rgb(58, 35, 28)'
@@ -144,9 +144,82 @@ const slides: React.ReactNode[] = [
   // Slide 4 — Design e Usabilidade
   <SlideShell key="design" className="flex flex-col">
     <SlideTitle>2. Escolhas de Design e Usabilidade</SlideTitle>
-    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4">
-      <Placeholder label="Tabela comparativa" />
-      <Placeholder label="Decisões de UI" />
+    <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6 overflow-y-auto" style={{ color: BROWN }}>
+      <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 flex flex-col">
+        <h3 className="font-bold text-lg border-b pb-2 mb-3">Análise de Interfaces de Referência</h3>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm text-left border-collapse">
+            <thead>
+              <tr className="bg-gray-100 border-b-2 border-gray-300">
+                <th className="p-2 font-semibold">Sistema</th>
+                <th className="p-2 font-semibold text-center">Adoção</th>
+                <th className="p-2 font-semibold text-center">Cadastro</th>
+                <th className="p-2 font-semibold text-center">Doação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b">
+                <td className="p-2 font-medium">The Animal Foundation</td>
+                <td className="p-2 text-center text-green-600 font-bold">X</td>
+                <td className="p-2 text-center text-green-600 font-bold">X</td>
+                <td className="p-2 text-center text-green-600 font-bold">X</td>
+              </tr>
+              <tr className="border-b bg-gray-50">
+                <td className="p-2 font-medium">The Petz</td>
+                <td className="p-2 text-center text-green-600 font-bold">X</td>
+                <td className="p-2 text-center text-green-600 font-bold">X</td>
+                <td className="p-2 text-center text-gray-400">-</td>
+              </tr>
+              <tr className="border-b">
+                <td className="p-2 font-medium">Pet Care</td>
+                <td className="p-2 text-center text-gray-400">-</td>
+                <td className="p-2 text-center text-green-600 font-bold">X</td>
+                <td className="p-2 text-center text-gray-400">-</td>
+              </tr>
+              <tr className="border-b bg-gray-50">
+                <td className="p-2 font-medium">PetFy (Nosso App)</td>
+                <td className="p-2 text-center text-orange-500 font-bold">X</td>
+                <td className="p-2 text-center text-orange-500 font-bold">X</td>
+                <td className="p-2 text-center text-orange-500 font-bold">X</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-gray-500 mt-2 text-right">* Baseado na análise de mercado[cite: 76].</p>
+      </div>
+
+      <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-200 flex flex-col">
+        <h3 className="font-bold text-lg border-b pb-2 mb-3">Decisões Práticas de UI</h3>
+        <ul className="space-y-4 text-sm">
+          <li className="flex items-start gap-3">
+            <span className="inline-flex shrink-0 items-center justify-center w-6 h-6 rounded-full mt-0.5" style={{ background: ORANGE }}>
+              <LayoutTemplate size={12} color="#fff" />
+            </span>
+            <div>
+              <strong>Identidade Minimalista e Acolhedora:</strong> <br />
+              Adoção de tons pastéis e bordas arredondadas [cite: 452], visando facilitar a interação do usuário e transmitir cuidado animal[cite: 74, 75, 452].
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="inline-flex shrink-0 items-center justify-center w-6 h-6 rounded-full mt-0.5" style={{ background: ORANGE }}>
+              <MessageSquareWarning size={12} color="#fff" />
+            </span>
+            <div>
+              <strong>Feedback Visual Claro:</strong> <br />
+              Implementação de mensagens amigáveis em português (ex: "Servidor offline") para tratamento de erros[cite: 504, 505], garantindo uma navegação não obstrutiva.
+            </div>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="inline-flex shrink-0 items-center justify-center w-6 h-6 rounded-full mt-0.5" style={{ background: ORANGE }}>
+              <MousePointerClick size={12} color="#fff" />
+            </span>
+            <div>
+              <strong>Interatividade Dinâmica:</strong> <br />
+              Uso de carrosséis arrastáveis na página inicial e destaques visuais (selos de status e verificação de ONGs) [cite: 501, 506, 507] para otimizar a experiência do adotante.
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </SlideShell>,
 
