@@ -179,7 +179,7 @@ const slides: React.ReactNode[] = [
     <SlideTitle>6. Modelo de Dados Relacional</SlideTitle>
     <div className="flex-1 w-full h-full relative flex items-center justify-center">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/Assets/Modelo de Dados.png" alt="Modelo de Dados" className="max-w-full max-h-full object-contain" />
+      <img src="./Assets/Modelo de Dados.png" alt="Modelo de Dados" className="max-w-full max-h-full object-contain" />
     </div>
   </SlideShell>,
 
