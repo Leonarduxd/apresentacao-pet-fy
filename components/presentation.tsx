@@ -108,8 +108,8 @@ const slides: React.ReactNode[] = [
         style={{ ['--tw-ring-color' as string]: ORANGE }}
       >
         <Image
-          src="/images/golden-retrievers.png"
-          alt="Dois golden retrievers sentados sorrindo para a câmera em fundo neutro"
+          src="/assets/goldenRr.jpeg"
+          alt="Cachorro"
           width={288}
           height={288}
           className="w-full h-full object-cover"
@@ -269,7 +269,7 @@ const slides: React.ReactNode[] = [
         
         <div className="flex-1 w-full relative mb-4 min-h-[200px] flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden border border-gray-100">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="./assets/tela-principal.png" alt="Tela Principal da Aplicação" className="max-w-full max-h-full object-contain drop-shadow-sm" />
+          <img src="./assets/PetPerfil.jpg" alt="Perfil do Pet" className="max-w-full max-h-full object-contain drop-shadow-sm" />
         </div>
         
         <div className="bg-orange-50 p-4 rounded-lg border border-orange-100">
@@ -289,7 +289,10 @@ const slides: React.ReactNode[] = [
   // Slide 5 — Protótipo
   <SlideShell key="prototipo" className="flex flex-col">
     <SlideTitle>3. Protótipo da Interface</SlideTitle>
-    <Placeholder label="Telas e wireframes" className="flex-1" />
+    <div className="flex-1 w-full h-full relative flex items-center justify-center bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden p-4">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="./assets/tela-principal.png" alt="Tela Principal da Aplicação" className="max-w-full max-h-full object-contain" />
+    </div>
   </SlideShell>,
 
   // Slide 6 — Arquitetura
