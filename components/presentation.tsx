@@ -107,13 +107,10 @@ const slides: React.ReactNode[] = [
         className="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden ring-8 shadow-xl"
         style={{ ['--tw-ring-color' as string]: ORANGE }}
       >
-        <Image
-          src="/assets/goldenRr.jpeg"
+        <img
+          src="./assets/retriever.jpeg"
           alt="Cachorro"
-          width={288}
-          height={288}
           className="w-full h-full object-cover"
-          priority
         />
       </div>
     </div>
@@ -328,9 +325,9 @@ const slides: React.ReactNode[] = [
   // Slide 8 — Modelo de dados
   <SlideShell key="dados" className="flex flex-col">
     <SlideTitle>6. Modelo de Dados Relacional</SlideTitle>
-    <div className="flex-1 w-full h-full relative flex items-center justify-center">
+    <div className="flex-1 w-full h-full relative overflow-auto bg-white rounded-xl shadow-sm border border-gray-200 p-4">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="./assets/modelo-de-dados.png" alt="Modelo de Dados" className="max-w-full max-h-full object-contain" />
+      <img src="./assets/modelo-de-dados.png" alt="Modelo de Dados" className="w-full min-w-[800px] h-auto object-contain mx-auto" />
     </div>
   </SlideShell>,
 
